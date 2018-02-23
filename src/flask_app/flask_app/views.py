@@ -16,6 +16,6 @@ def index():
     returnDict = {}
     returnDict['user'] = 'Hello'
     returnDict['title'] = 'COMP30670'
-    returnDict['platform'] = main.main()
+    returnDict['platform'] = main.get_platform()
     print(main.get_platform())
     return render_template('index.html', **returnDict)
